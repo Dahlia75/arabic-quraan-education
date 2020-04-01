@@ -1,11 +1,22 @@
 {
-  "name": "memorizing-quraan",
+  "name": "arabic-quraan-education",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Dahlia Abdualkareem",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dahlia75/arabic-quraan-education.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dahlia75/arabic-quraan-education/issues"
+  },
+  "homepage": "https://github.com/Dahlia75/arabic-quraan-education#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
