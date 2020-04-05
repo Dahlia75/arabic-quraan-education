@@ -16,9 +16,11 @@ app.use(bodyParser.urlencoded({ extended: false }))
 //Modules
 const home = require('./routes/home');
 const courses = require('./routes/courses');
+const create = require('./routes/create');
 
 app.get('/', home);
 app.get('/courses', courses);
+app.get('/create', create);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

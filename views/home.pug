@@ -1,4 +1,38 @@
 extends ./layout.pug
 
 block content
-    h1 Welcome to the Arabic and Quran Classes Platform
+    h1 Welcome to the Courses Management Platform
+    .row
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='./img/course.jpeg' style='height: 12rem;' alt='Card image cap')
+                .card-body
+                    h5.card-title Courses
+                    p.card-text
+                    | We have several courses
+                ul.list-group.list-group-flush
+                    li.list-group-item Kids Memorizing - Bidaya
+                    li.list-group-item Recitation - Tarteel
+                    li.list-group-item Memorizing - Hifz
+                .card-body
+                    a.btn.btn-primary.card-link(href='/courses') View
+                    a.btn.btn-primary.card-link(href='/create') Register
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='./img/schedule.jpeg' alt='Card image cap')
+                .card-body
+                    h5.card-title Schedule
+                    p.card-text
+                    | You can see your schedule here
+                .card-body
+                    a.btn.btn-primary.card-link(href='#') View
+        .col
+            .card(style='width: 18rem;')
+                img.card-img-top(src='./img/students.jpeg' alt='Card image cap')
+                .card-body
+                    h5.card-title Students
+                    p.card-text
+                    | You can see your account here
+                .card-body
+                    a.btn.btn-primary.card-link(href='#') View
+                    a.btn.btn-primary.card-link(href='#') Register
