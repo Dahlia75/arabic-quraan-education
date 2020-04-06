@@ -1,5 +1,35 @@
 extends ./layout.pug
 
 block content
-    h1 Welcome to the Arabic and Quran Classes Platform
-    h2 This is the courses page
+    h1 Welcome to the Arabic and Quran Courses Platform
+    br
+    .row
+        .col
+            .card.card-style(style='width: 18rem; border-radius: 15%;')
+                img.card-img-top(src='./img/bidaya.png' style='height: 12rem; border-radius: 25px;' alt='Card image cap')
+                .card-body
+                    h5.card-title Bidaya
+                    p.card-text
+                    | An educational program that teaches how to read Arabic for all educational levels, Arabic and non-Arabic speakers.
+                //- .card-body
+                //-     a.btn.btn-primary.card-link(href='/courses') View
+                //-     a.btn.btn-primary.card-link(href='#') Register
+        .col
+            .card.card-style(style='width: 18rem; border-radius: 15%;')
+                img.card-img-top(src='./img/tarteel.jpeg' style='height: 12rem; border-radius: 15%;' alt='Card image cap')
+                .card-body
+                    h5.card-title Tarteel
+                    p.card-text
+                    | Reading all Quran in "tarteel" with recitation, and learning tajweed practical and theoretical.
+                //- .card-body
+                //-     a.btn.btn-primary.card-link(href='#') View
+                //-     a.btn.btn-primary.card-link(href='/create') Register
+        .col
+            .card.card-style(style='width: 18rem; border-radius: 15%;')
+                img.card-img-top(src='./img/hifz.jpeg' style='height: 12rem; border-radius: 15%;' alt='Card image cap')
+                .card-body
+                    h5.card-title Hifz
+                    p.card-text
+                    | Quran memorization starting from the last chapter. Teaches reading, Noraniyah, and practical tajweed.
+                //- .card-body
+                //-     a.btn.btn-primary.card-link(href='#') View

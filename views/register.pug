@@ -1,0 +1,61 @@
+extends ./layout.pug
+
+block content
+    h1 Welcome to our courses
+    h2 Please enter your information in order to register with us
+    br
+    .container.border.border-primary.container-style
+        form.needs-validation(novalidate='')
+            .form-row
+                .col-md-4.mb-3
+                    label(for='validationTooltip01') First name
+                    input#validationTooltip01.form-control(type='text' placeholder='First name' value='' required='true')
+                    .valid-tooltip
+                        | Looks good!
+                .col-md-4.mb-3
+                    label(for='validationTooltip02') Last name
+                    input#validationTooltip02.form-control(type='text' placeholder='Last name' value='' required='true')
+                    .valid-tooltip
+                        | Looks good!
+                .col-md-4.mb-3
+                    label(for='validationTooltipUsername') Email
+                    .input-group
+                        .input-group-prepend
+                            span#validationTooltipUsernamePrepend.input-group-text @
+                        input#validationTooltipUsername.form-control(type='email' placeholder='Email' aria-describedby='validationTooltipUsernamePrepend' required='true')
+                        .invalid-tooltip
+                            | Please choose a unique and valid username.
+            .form-row
+                .col-md-4.mb-3
+                    label(for='validationTooltip03') Country of Origion
+                    input#validationTooltip03.form-control(type='text' placeholder='Country of Origion' required='')
+                    .invalid-tooltip
+                        | Please provide a valid country.
+                .col-md-4.mb-3
+                    label(for='validationTooltip04') Language
+                    input#validationTooltip04.form-control(type='text' placeholder='Postal Code' required='')
+                    .invalid-tooltip
+                        | Please provide a valid language.
+                .col-md-4.mb-3
+                    label(for='validationTooltip05') Date of Birth
+                    input#validationTooltip05.form-control(type='date' placeholder='Phone Number' required='')
+                    .invalid-tooltip
+                        | Please provide a valid date of birth.
+            .form-row
+                .col-md-4.mb-3
+                    label(for='validationTooltip03') City
+                    input#validationTooltip03.form-control(type='text' placeholder='City' required='')
+                    .invalid-tooltip
+                        | Please provide a valid city.
+                .col-md-4.mb-3
+                    label(for='validationTooltip04') Postal Code
+                    input#validationTooltip04.form-control(type='text' placeholder='Postal Code' required='')
+                    .invalid-tooltip
+                        | Please provide a valid Postal Code.
+                .col-md-4.mb-3
+                    label(for='validationTooltip05') Phone
+                    input#validationTooltip05.form-control(type='text' placeholder='Phone number' required='')
+                    .invalid-tooltip
+                        | Please provide a valid phone number.
+        button.btn.btn-primary(type='submit') Submit
+        

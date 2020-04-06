@@ -2,37 +2,38 @@ extends ./layout.pug
 
 block content
     h1 Welcome to the Courses Management Platform
+    br
     .row
         .col
-            .card(style='width: 18rem;')
+            .card.card-style(style='width: 18rem;')
                 img.card-img-top(src='./img/course.jpeg' style='height: 12rem;' alt='Card image cap')
                 .card-body
                     h5.card-title Courses
                     p.card-text
                     | We have several courses
-                ul.list-group.list-group-flush
-                    li.list-group-item Kids Memorizing - Bidaya
-                    li.list-group-item Recitation - Tarteel
-                    li.list-group-item Memorizing - Hifz
+                //- ul.list-group.list-group-flush
+                //-     li.list-group-item Kids Memorizing - Bidaya
+                //-     li.list-group-item Recitation - Tarteel
+                //-     li.list-group-item Memorizing - Hifz
                 .card-body
                     a.btn.btn-primary.card-link(href='/courses') View
-                    a.btn.btn-primary.card-link(href='/create') Register
+                    a.btn.btn-primary.card-link(href='create') Register
         .col
-            .card(style='width: 18rem;')
-                img.card-img-top(src='./img/schedule.jpeg' alt='Card image cap')
-                .card-body
-                    h5.card-title Schedule
-                    p.card-text
-                    | You can see your schedule here
-                .card-body
-                    a.btn.btn-primary.card-link(href='#') View
-        .col
-            .card(style='width: 18rem;')
-                img.card-img-top(src='./img/students.jpeg' alt='Card image cap')
+            .card.card-style(style='width: 18rem;')
+                img.card-img-top(src='./img/students.jpeg' style='height: 12rem;' alt='Card image cap')
                 .card-body
                     h5.card-title Students
                     p.card-text
-                    | You can see your account here
+                    | Register or see your profile here
                 .card-body
                     a.btn.btn-primary.card-link(href='#') View
-                    a.btn.btn-primary.card-link(href='#') Register
+                    a.btn.btn-primary.card-link(href='/register') Register
+        .col
+            .card.card-style(style='width: 18rem;')
+                img.card-img-top(src='./img/schedule.jpeg' style='height: 12rem;' alt='Card image cap')
+                .card-body
+                    h5.card-title Homework
+                    p.card-text
+                    | You can see your homework here
+                .card-body
+                    a.btn.btn-primary.card-link(href='/homework') View

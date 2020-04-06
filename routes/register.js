@@ -1,5 +1,5 @@
 const get = (req, res) => {
-    res.render('create');
+    res.render('register');
 }
 
 const post = (req, res) => {

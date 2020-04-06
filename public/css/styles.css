@@ -1,3 +1,19 @@
 body {
     color: rgb(254, 138, 225);
 }
+body h1 {
+    color: darkorchid
+}
+.container-style {
+    padding: 2rem;
+    box-shadow: 10px 10px 5px lightblue;
+}
+.card-style {
+    margin: 1rem;
+    box-shadow: 10px 10px 5px lightpink;
+    color: darkorchid;
+}
+
+.select-btn {
+    background-color: red;
+}
